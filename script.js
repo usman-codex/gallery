@@ -7,12 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Aapki images ke naam (images folder mein honi chahiye)
     // Example: agar image ka naam "my_trip.jpg" hai to "my_trip.jpg" likhen
     const IMAGES = [
-        "class-man.png",
-        "class-stock.png",
-        "classs-girl.png",
         // Yahan apni saari images ke naam add karein
-        // "photo_4.gif",
-        // "vacation_pic.webp",
+         "IMG-1.jpg",
+         "IMG-2.jpg",
+         "IMG-3.jpg",
+         "IMG-4.jpg",
+         "IMG-5.jpg",
+         "IMG-6.jpg",
+         "IMG-7.jpg",
+         "IMG-8.jpg",
+         "IMG-9.jpg",
+         "IMG-10.jpg",
+        
     ];
 
     // --- DOM Elements ---
