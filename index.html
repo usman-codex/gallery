@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Initial Password Protection -->
+    <div id="initial-password-screen" class="screen active">
+        <div class="form-container">
+            <h2>Enter Master Password</h2>
+            <input type="password" id="master-password-input" placeholder="Master Password">
+            <button id="master-password-submit">Enter</button>
+            <p id="master-password-error" class="error-message"></p>
+        </div>
+    </div>
+
+    <!-- Login Screen -->
+    <div id="login-screen" class="screen">
+        <div class="form-container">
+            <h2>Login to Gallery</h2>
+            <input type="email" id="email-input" placeholder="Email">
+            <input type="password" id="login-password-input" placeholder="Password">
+            <button id="login-submit">Login</button>
+            <p id="login-error" class="error-message"></p>
+        </div>
+    </div>
+
+    <!-- Gallery Screen -->
+    <div id="gallery-screen" class="screen">
+        <header>
+            <h1>My Images</h1>
+            <button id="logout-button">Logout</button>
+        </header>
+        <div id="image-gallery-container">
+            <!-- Images will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Lightbox (Fullscreen Image Viewer) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">×</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev" onclick="changeImage(-1)">❮</a>
+        <a class="next" onclick="changeImage(1)">❯</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
